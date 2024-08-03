@@ -1,0 +1,22 @@
+body {
+    margin: 0;
+    height: 100vh;
+}
+
+/*主容器默认宽度等配置*/
+.content {
+    /* max-width: 1000px; */
+    margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+    overflow: hidden;
+}
+
+/*次一级容器配置*/
+.sub_content {
+    text-align: center;
+    margin-top: 20px
+}
+
+

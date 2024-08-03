@@ -1,0 +1,18 @@
+version: '3.9'
+
+services:
+  titanium-web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: titanium-web:0.1-alpine
+    container_name: titanium-web
+    ports:
+      - "8080:8080" # 假设你的Vue应用运行在8080端口
+    networks:
+      - titaniumNet
+    restart: unless-stopped
+
+networks:
+  titaniumNet:
+    external: true # 表明titaniumNet是一个预先存在的网络
